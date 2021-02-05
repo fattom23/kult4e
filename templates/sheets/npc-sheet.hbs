@@ -1,0 +1,22 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header"><script src="systems/kult4e/scripts/delete.js"></script><script src="systems/kult4e/scripts/getAttribute.js"></script>
+        <img src="https://kultdivinitylost.com/wp-content/uploads/2018/09/Kult-Divinity-lost-logo-1-webb.png" height="64" width="167">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+    </header>
+    <div class="flex-container">
+        <div class="npc-harm">Harm Placeholder</div>
+        <div class="npc-harm"><textarea name="data.harmmoves" placeholder="Harm Moves">{{data.harmmoves}}</textarea></div>
+        </div>
+    <div class="flex-container">
+        <div class="npc-moves">
+            <textarea name="data.combatmoves" placeholder="Combat Moves">{{data.combatmoves}}</textarea>
+        </div>
+         <div class="npc-moves">
+            <textarea name="data.influencemoves" placeholder="Influence Moves">{{data.influencemoves}}</textarea>
+        </div>
+         <div class="npc-moves">
+            <textarea name="data.magicmoves" placeholder="Magic Moves">{{data.magicmoves}}</textarea>
+        </div>
+
+    </div>

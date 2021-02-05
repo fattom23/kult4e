@@ -1,0 +1,130 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header"><script src="systems/kult4e/scripts/delete.js"></script><script src="systems/kult4e/scripts/getAttribute.js"></script>
+        <img src="https://kultdivinitylost.com/wp-content/uploads/2018/09/Kult-Divinity-lost-logo-1-webb.png" height="64" width="167">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+    </header>
+    <div class="flex-container">
+    <div class="flex-column">
+        <div>Forward: <select name="data.forward" value= "{{data.forward}}">{{#select data.forward}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option>{{/select}}</select></div>
+        <div>Situational Modifier: <select name="data.sitmod" value= "{{data.sitmod}}">{{#select data.sitmod}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option><option value="-4">-4</option><option value="-5">-5</option>{{/select}}</select></div>
+    </div>
+    <div class="flex-column">
+                <span class="section-label">Stability Damage<select name="data.stability.value" value= "{{data.stability.value}}">{{#select data.stability.value}}
+                    <option value="0">Composed: No Modifiers</option>
+                    <option value="1">Uneasy: -1 to Disadvantage</option>
+                    <option value="2">Unfocused: -1 to Disadvantage</option>
+                    <option value="3">Shaken: -1 KIT/-2 Disadvantage</option>
+                    <option value="4">Distressed: -1 KIT/-2 Disadvantage</option>
+                    <option value="5">Neurotic: -1 KIT/-2 Disadvantage</option>
+                    <option value="6">Anxious: -2 KIT/ -3 Disadvantage / +1 Illusion</option>
+                    <option value="7">Irrational: -2 KIT/ -3 Disadvantage / +1 Illusion</option>
+                    <option value="8">Unhinged: -2 KIT/ -3 Disadvantage / +1 Illusion</option>
+                    <option value="9">Broken: GM Makes a Move</option>{{/select}}</select>
+                </span>
+            <a class="stability-plus"><i class="fas stability-plus fa-plus-circle"></i></a><a class="stability-minus"><i class="fas stability-minus fa-minus-circle"></i></a>
+    </div>
+    </div>
+    <div class="top-menu">
+        <table>
+        <tr><td class="attribute-box">
+            <table>
+            <tr><td>{{localize 'kult4e.Willpower'}}:</td><td><select name="data.willpower" value= "{{data.willpower}}">{{#select data.willpower}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Fortitude'}}:</td><td><select name="data.fortitude" value= "{{data.fortitude}}">{{#select data.fortitude}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Reflexes'}}:</td><td><select name="data.reflexes" value= "{{data.reflexes}}">{{#select data.reflexes}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Reason'}}:</td><td><select name="data.reason" value= "{{data.reason}}">{{#select data.reason}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Intuition'}}:</td><td><select name="data.intuition" value= "{{data.intuition}}">{{#select data.intuition}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>   
+            <tr><td>{{localize 'kult4e.Perception'}}:</td><td><select name="data.perception" value= "{{data.perception}}">{{#select data.perception}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Coolness'}}:</td><td><select name="data.coolness" value= "{{data.coolness}}">{{#select data.coolness}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Violence'}}:</td><td><select name="data.violence" value= "{{data.violence}}">{{#select data.violence}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Charisma'}}:</td><td><select name="data.charisma" value= "{{data.charisma}}">{{#select data.charisma}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            <tr><td>{{localize 'kult4e.Soul'}}:</td><td><select name="data.soul" value= "{{data.soul}}">{{#select data.soul}}<option value="3">3</option><option value="2">2</option><option value="1">1</option><option value="0">0</option><option value="-1">-1</option><option value="-2">-2</option><option value="-3">-3</option>{{/select}}</select></td></tr>
+            </table>
+        </td>
+    <td class="advantage-box">
+        <div class="section-label">Dark Secrets</div>
+        
+            <div class=" item-list darksecret-list">
+                {{#each moves as |move id|}}
+                {{#if (eq move.type "darksecret")}}
+                {{> "systems/kult4e/templates/partials/move-card.hbs" move}}
+                {{/if}}
+                {{/each}}
+
+            </div>
+        <div class="section-label">Advantages</div>
+        
+            <div class="item-list advantage-list">
+                {{#each moves as |move id|}}
+                {{#if (eq move.type "advantage")}}
+                {{> "systems/kult4e/templates/partials/move-card.hbs" move}}
+                {{/if}}
+                {{/each}}
+
+            </div>
+        <div class="section-label">Disadvantages</div>
+        
+            <div class="item-list disadvantage-list">
+                {{#each moves as |move id|}}
+                {{#if (eq move.type "disadvantage")}}
+                {{> "systems/kult4e/templates/partials/move-card.hbs" move}}
+                {{/if}}
+                {{/each}}
+
+            </div>
+
+        <div class="section-label">Relationships</div>
+        
+            <div class="item-list relationship-list">
+                {{#each moves as |move id|}}
+                {{#if (eq move.type "relationship")}}
+                {{> "systems/kult4e/templates/partials/relationship-card.hbs" move}}
+                {{/if}}
+                {{/each}}
+
+            </div>
+            <div class="weapon-section">
+                <div class="section-label">Weapons</div>
+                <div class=" item-list weapon-list">
+                {{#each moves as |move id|}}
+                {{#if (eq move.type "weapon")}}
+                {{> "systems/kult4e/templates/partials/weapon-card.hbs" move}}
+                {{/if}}
+                {{/each}}
+c.
+            </div>
+        </td>
+        <td class="wound-section">
+            <div>
+                <div class="section-label"><span>Major Wound</span><span class="stabilized">Stablized?<select name="data.attributes.majorwound1stabilized" value= "{{data.attributes.marjorwound1stabilized}}">{{#select data.attributes.majorwound1stabilized}}<option value="true">Yes</option><option value="false">No</option>{{/select}}</select></span><input type="text" name="data.attributes.majorwound1" value="{{data.attributes.majorwound1}}" data-dtype="Text"></div>
+                <div class="section-label"><span>Critical Wound</span><span class="stabilized">Stablized?<select name="data.attributes.criticalwoundstabilized" value= "{{data.attributes.criticalwoundstabilized}}">{{#select data.attributes.criticalwoundstabilized}}<option value="true">Yes</option><option value="false">No</option>{{/select}}</select></span><input type="text" name="data.attributes.criticalwound" value="{{data.attributes.criticalwound}}" data-dtype="Text"></div>
+                </div>
+
+        </td>
+        </tr>
+        </table>
+        <div class="bottom-section">  
+            <div class="move-section">      
+            <div class="section-label">Moves</div>
+        <div class="item-list move-list">
+                {{#each moves as |move id|}}
+                {{#if (eq move.type "move")}}
+                {{> "systems/kult4e/templates/partials/move-card.hbs" move}}
+                {{/if}}
+                {{/each}}
+</div>
+        
+            </div>
+            
+            
+            </div>    
+                
+                
+                
+            </div> 
+                
+                
+                </div>
+        </div>
+        
+</form>

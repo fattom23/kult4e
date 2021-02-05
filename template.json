@@ -1,0 +1,105 @@
+{
+  "Actor": {
+    "types": ["pc", "npc"],
+    "pc": {
+      "biography": "",
+      "stability": {
+        "value": 0,
+        "min": 0,
+        "max": 9
+      },
+         
+      "attributes": {
+        "Willpower": 0,
+        "Fortitude": 0,
+        "Reflexes": 0,
+        "Reason": 0,
+        "Intuition": 0,
+        "Perception": 0,
+        "Coolness": 0,
+        "Violence": 0,
+        "Charisma": 0,
+        "Soul": 0,
+        "Advantages": "",
+        "Disadvantages": "",
+        "DarkSecret": "",
+        "forward": 0,
+        "sitmod": 0,
+        "majorwound1": "",
+        "majorwound1stabilized": "no",
+        "majorwound2": "",
+        "majorwound3": "",
+        "majorwound4": "",
+        "criticalwound": "",
+        "criticalwoundstabilized": "no"
+      }
+      
+    },
+
+    "npc":{
+      "harm":{
+        "value": 0,
+        "min": 0,
+        "max": 5
+      },
+
+      "harmmoves": "",
+      "combatmoves": "",
+      "influencemoves": "",
+      "magicmoves": "",
+      "description": "",
+      "attacks": "",
+      "abilities": ""
+
+    }
+  },
+  "Item": {
+    "types": ["move", "weapon", "advantage", "disadvantage", "darksecret", "relationship"],
+    "move": {
+      "description": "",
+      "attributemod": "",
+      "completesuccess": "Complete Success",
+      "partialsuccess": "Partial Success",
+      "failure": "Failure!",
+      "trigger": "When you",
+      "specialflag": "0"
+         },
+    "weapon":{
+    "description": "",
+    "harm": 0,
+    "range": 0,
+    "ammo":
+      {"value": 0,
+      "min": 0,
+      "max": 0},
+    "special": ""
+  },
+  "advantage":{
+    "description": "",
+    "type": "active",
+    "effect": "",
+    "completesuccess": "Complete Success",
+    "partialsuccess": "Partial Success",
+    "failure": "Failure!",
+    "attributemod": ""
+      },
+    "disadvantage":{
+      "description": "",
+      "type": "active",
+      "effect": "",
+      "completesuccess": "Complete Success",
+      "partialsuccess": "Partial Success",
+      "failure": "Failure!",
+      "attributemod": ""
+    },
+  "darksecret":{
+    "description": "",
+    "effect": ""
+  },
+  "relationship":{
+    "target": "",
+    "strength": 0
+  }
+
+  }
+}
